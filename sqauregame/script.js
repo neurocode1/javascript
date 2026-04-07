@@ -67,3 +67,25 @@ s3.addEventListener("mouseout", function() {
     s3.style.backgroundColor = "transparent";
 }
 )
+
+
+
+
+let s4 = document.getElementById("sec4");
+s4.addEventListener("click", function() {
+let r1 = Math.floor(Math.random()*256);
+let r2 = Math.floor(Math.random()*256);
+let r3 = Math.floor(Math.random()*256);
+s1.style.backgroundColor = `rgb(${r1},${r3},${r2})`;
+s2.style.backgroundColor = `rgb(${r3},${r2},${r1})`;
+s3.style.backgroundColor = `rgb(${r2},${r1},${r3})`;
+
+}
+)
+
+s4.addEventListener("mouseout", function() {
+    s1.style.backgroundColor = "transparent";
+    s2.style.backgroundColor = "transparent";
+    s3.style.backgroundColor = "transparent";
+}
+)
